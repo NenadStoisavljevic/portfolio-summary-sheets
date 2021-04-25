@@ -1,0 +1,333 @@
+\documentclass{article}
+\usepackage[landscape]{geometry}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{esint}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\makeatletter
+
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+
+\title{Unit 1 Summary Sheet}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\advance\topmargin-.8in
+\advance\textheight3in
+\advance\textwidth3in
+\advance\oddsidemargin-1.5in
+\advance\evensidemargin-1.5in
+\parindent0pt
+\parskip2pt
+\newcommand{\hr}{\centerline{\rule{3.5in}{1pt}}}
+%\colorbox[HTML]{e4e4e4}{\makebox[\textwidth-2\fboxsep][l]{texto}
+\begin{document}
+
+\begin{center}{\huge{\textbf{Unit 2 Summary Sheet}}}\\
+\end{center}
+\begin{multicols*}{3}
+
+\tikzstyle{mybox} = [draw=black, fill=white, very thick,
+    rectangle, rounded corners, inner sep=10pt, inner ysep=10pt]
+\tikzstyle{fancytitle} =[fill=black, text=white, font=\bfseries]
+
+%------------ Types of Reactions ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \begin{enumerate}
+        \item \textbf{Synthesis reaction}: occurs when two or more elements combine to form a compound. \\
+		e.g. $2Na(s)+Cl_{2}(g)\rightarrow 2NaCl(s)$ \\
+		$A+B\rightarrow AB$
+        \item \textbf{Decomposition reaction}: occurs when a compound breaks down into two or more simpler substances. \\
+		e.g. $2AgCl(s)\rightarrow 2Ag(s)+Cl_{2}(g)$ \\
+		$AB\rightarrow A+B$
+        \item \textbf{Single Displacement reaction}: occurs when an element replaces another element in a compound. \\
+		e.g. $Zn(s)+2HCl(aq)\rightarrow ZnCl_{2}(aq)+H_{2}(g)$ \\
+		$AB+C\rightarrow AC+B$
+        \item \textbf{Double Displacement reaction}: occurs when the cations and anions displace each other to form two new products. \\
+		e.g. $AgNO_{3}(aq)+NaCl(s)\rightarrow AgCl(s)+NaNO_{3}(aq)$ \\
+		$AB+CD\rightarrow AD+CB$
+	\item \textbf{Complete combustion reaction}: occurs when a hydrocarbon reacts with a sufficient amount of oxygen gas to produce carbon dioxide and water (blue flame). \\
+		$C_{x}H_{y}(g)+O_{2}(g)\rightarrow CO_{2}(g)+H_{2}O(g)$
+	\item \textbf{Incomplete combustion reaction}: occurs when a hydrocarbon reacts with an insufficient amount of oxygen gas to produce carbon dioxide, water and carbon monoxide (orange flame). \\
+		$C_{x}H_{y}(g)+O_{2}(g)\rightarrow CO(g)+CO_{2}(g)+H_{2}O(g)$
+    \end{enumerate}
+    \end{minipage}
+};
+%------------ Types of Reactions Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Types of Reactions};
+\end{tikzpicture}
+
+%------------ Balancing Chemical Equations ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Law of Conservation of Mass}: mass in an isolated system is neither created nor destroyed by chemical reactions or physical transformations. \\
+    \textbf{Skeleton Equation}: chemical equation in which the number of atoms is not equal on both sides. \\
+    \textbf{Balanced Equation}: number of atoms in the \textit{reactants} must equal the number of atoms in the \textit{products}. \\
+    e.g. $N_{2}(g)+3H_{2}(g)\rightarrow 2NH_{3}(g)$
+    \end{minipage}
+};
+%------------ Balancing Chemical Equations Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Balancing Chemical Equations};
+\end{tikzpicture}
+
+%------------ Activity Series ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{The Activity Series}: used for predicting single displacement reactions.
+    \begin{itemize}
+        \item The element on the reactant side must be more ``active'' than the one it could replace in order for a single displacement reaction to occur. \\
+	e.g. $Al(s)+CuCl_{2}(aq)\rightarrow Cu(s)+AlCl_{3}(aq)$
+        \item If the element is not more ``active'' than the one it could replace, then the single displacement reaction will not occur. \\
+	e.g. $Ni(s) + NaCl(aq)\rightarrow$ NR (no reaction)
+	\item The reactivity of $H_{2}O$ depends on the metal and water temperature.
+	\item Near the top, the metals are more reactive because their valence electrons are easier to be removed.
+	\item There is an activity series just for non-metals, this is much shorter.
+    \end{itemize}
+    \end{minipage}
+};
+%------------ Activity Series Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Activity Series};
+\end{tikzpicture}
+
+%------------ Solubility Rules ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Solubility Rules}: used for predicting what products will be soluble or insoluble. \\ \\
+    A \textbf{double displacement reaction} has occurred when there is:
+    \begin{itemize}
+        \item a formation of a precipitate (s),
+	\item a formation of a gas (g),
+	\item a formation of water (neutralization reaction).
+    \end{itemize}
+    \textbf{Molecular Equation}: \\
+     $KBr(aq)+AgNO_{3}(aq)\rightarrow KNO_{3}(aq)+AgBr(s)$ \\ \\
+    \textbf{Complete Ionic Equation}: all reactants and products separated into ions, contains spectator ions. \\
+    ${K}^{+}+{Br}^{-}+{Ag}^{+}+{NO_{3}}^{-}\rightarrow {K}^{+}+{NO_{3}}^{-}+{Ag}^{+}+{Br}^{-}$ \\ \\
+    \textbf{Net Ionic Equation}: eliminates the ions not directly involved in making the reaction happen. \\
+    ${Br}^{-}+{Ag}^{+}\rightarrow AgBr(s)$ \\
+    \end{minipage}
+};
+%------------ Solubility Rules Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Solubility Rules};
+\end{tikzpicture}
+
+%------------ The Mole ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Avogadro's constant ($N_{A}$)}: $6.022\times{10}^{23}$, this is how many particles are in one mole. The same number of atoms in 12 grams of carbon-12. \\
+    \textbf{Mole}: used to count atoms, ions, molecules, or formula units in groups of $6.022\times{10}^{23}$. A mole of pure carbon-12 is exactly 12 grams. \\
+    \textbf{Molecule}: basic unit of a covalent substance. \\
+    \textbf{Formula Unit}: basic unit of an ionic substance.
+    \begin{itemize}
+        \item $n$ = number of moles
+	\item $N_{A}$ = Avogadro's constant
+	\item $N$ = number of particles
+	\item $\displaystyle{n=\frac{N}{N_{A}}}$
+	\item $N=n\times N_{A}$
+    \end{itemize}
+    e.g. How many gold atoms in $4.70\times{10}^{-4}$ mol of gold? \\
+    $N=4.70\times{10}^{-4}\,mol\times6.022\times{10}^{23}\,atoms/mol$ \\
+    $N\approx2.83\times{10}^{20}\,Au\,Atoms$
+    \end{minipage}
+};
+%------------ The Mole Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {The Mole};
+\end{tikzpicture}
+
+%------------ Molar Mass ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Molar mass (M)}: the mass in grams of one mole of a substance. It is numerically the same as the \textbf{atomic mass unit (amu)} of an element, except the units are in grams per mole (g/mol). \\
+    e.g. Atomic mass of Calcium = 40.078 amu \\
+    e.g. Molar mass of Calcium = 40.078 g/mol \\
+    \textbf{Representation}: A mole ($6.022\times{10}^{23}$ Ca atoms) of calcium atoms weigh 40.078 grams. \\ \\
+    e.g. What is the molar mass of $H_{2}O$? \\
+    $M_{H_{2}O}=2\times1.0079\,g/mol+15.9994\,g/mol$ \\
+    $M_{H_{2}O}\approx18.02\,g/mol$
+    \begin{itemize}
+        \item $n$ = number of moles (mol)
+        \item $M$ = molar mass (g/mol)
+        \item $m$ = mass (g)
+	\item $\displaystyle{M=\frac{m(g)}{n(mol)}}$, $\displaystyle{n=\frac{m}{M}}$, $m=n\times M$
+    \end{itemize}
+    \end{minipage}
+};
+%------------ Molar Mass Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Molar Mass};
+\end{tikzpicture}
+
+%------------ Percent Composition ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Law of Definite Proportions}: the proportions of each element in a chemical compound, regardless of quantity, are the same. \\
+    \textbf{Percent Composition}: the percent by mass of each element in a compound.
+    $$\%\,mass\,of\,element=\frac{mass\,of\,element}{total\,mass\,of\,compound}\times100\%$$
+    e.g. What is the percent composition of $CO_{2}$? \\
+    $M_{CO_{2}}=44.01\,g/mol$ \\
+    $\displaystyle{\,\%C=\frac{12.011g/mol}{44.01\,g/mol}\times100\%}$ \\
+    $\%C=27.3\,\%$ \\ \\
+    $\displaystyle{\,\%O=\frac{32.00g/mol}{44.01\,g/mol}\times100\%}$ \\
+    $\%O=72.7\,\%$
+    \end{minipage}
+};
+%------------ Percent Composition Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Percent Composition};
+\end{tikzpicture}
+
+%------------ Empirical vs. Molecular Formula ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Empirical Formula}: shows the lowest whole number ratio of elements in a compound (simplest formula of a compound). Some compounds can have the same empirical formula. \\
+    \textbf{Molecular Formula}: shows the exact number of atoms of each element (actual formula of a compound). Each molecular formula is unique. \\ \\
+    Molecular Formula: $C_{6}H_{12}O_{6}$ \\
+    Empirical Formula: $CH_{2}O$ \\ \\
+    \textbf{Determining the Empirical Formula}:
+    \begin{enumerate}
+        \item Assume 100.0 g of the compound, change percentages of each of the elements to grams.
+	\item Convert the grams of each elements to moles.
+	\item Divide by the smallest number of moles.
+	\item Multiply by a constant to get a whole number.
+    \end{enumerate}
+    \textbf{Determining the Molecular Formula}:
+    $$ratio=\frac{mass\,of\,molecular\,formula}{mass\,of\,empirical\,formula}$$
+    Multiply each element by this ratio in order to determine the molecular formula.
+    \end{minipage}
+};
+%------------ Empirical vs. Molecular Formula Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Empirical vs. Molecular Formula};
+\end{tikzpicture}
+
+%------------ Molecular Formula of a Hydrate ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Hydrate}: ionic compound that contains water molecules in its structure. \\
+    \textbf{Anhydrate}: the substance that remains after the water has been removed from the hydrate. \\
+    e.g. What is the formula of $MgSO_{4}\cdot XH_{2}O$? \\ \\
+    \small{
+    \begin{tabular}{lp{3cm} l}
+	& $MgSO_{4}$ Hydrate  & 13.52 g \\
+        - & Anhydrate  & 6.60 g\\ \hline
+	& Water & 6.92 g \\
+    \end{tabular}} \\ \\
+    $\displaystyle{n_{MgSO_{4}}=\frac{6.60\,g}{120.37\,g/mol}}$ \\
+    $n_{MgSO_{4}}=0.054831\,mol$ \\ \\
+    $\displaystyle{n_{H_{2}O}=\frac{6.92\,g}{18.02\,g/mol}}$ \\
+    $n_{H_{2}O}=0.38402\,mol$ \\ \\
+    $\therefore$ dividing $n_{H_{2}O}$ by $n_{MgSO_{4}}$ to determine the coefficient of $H_{2}O$, the hydrate is $MgSO_{4}\cdot7H_{2}O$.
+    \end{minipage}
+};
+%------------ Molecular Formula of a Hydrate Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Molecular Formula of a Hydrate};
+\end{tikzpicture}
+
+%------------ Stoichiometry ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Mole-to-Mole Calculations}: mol A $\rightarrow$ mol B
+    \begin{enumerate}
+        \item Write the balanced chemical equation.
+	\item Write the mole ratios for the given substance(s).
+	\item Use the mole ratio to determine what amount of desired substance is produced or needed.
+    \end{enumerate}
+    \textbf{Mass-to-Mass Calculations}: grams A $\rightarrow$ grams B
+    \begin{enumerate}
+        \item Write the balanced chemical equation.
+	\item Use molar mass to convert mass to moles.
+	\item Use mole ratio to find the amount in moles.
+	\item Convert moles of desired substance to mass.
+    \end{enumerate}
+    \textbf{Mass-to-Particle Calculations}: grams A $\rightarrow$ mol B
+    \begin{enumerate}
+        \item Write the balanced chemical equation.
+	\item Use molar mass to convert the given mass to moles.
+	\item Apply the mole ratio to determine what amount of desired substance is produced or needed.
+	\item Multiply by avogradro's constant to determine the number of particles.
+    \end{enumerate}
+    \end{minipage}
+};
+%------------ Stoichiometry Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Stoichiometry};
+\end{tikzpicture}
+
+%------------ Limiting Reactant ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Limiting Reagent}: the first reactant to be used up in a reaction; determines when the reaction stops. \\
+    \textbf{Excess Reagent}: the reactant(s) that are not used up when the reaction is finished; it is left over. \\
+    \textbf{Stoichiometry involving Limiting Reactant}: identifying which reactant will run out first.
+    \begin{enumerate}
+	\item Write the balanced chemical equation.
+	\item Convert each reactant to moles.
+	\item Determine the amount of desired product that can be produced using the mole ratio.
+	\item The limiting reactant is the one that produces the least amount of product.
+	\item Using the amount of product based on the limiting reactant, convert the moles of the desired substance into mass.
+    \end{enumerate}
+    \end{minipage}
+};
+%------------ Limiting Reactant Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Limiting Reactant};
+\end{tikzpicture}
+
+%------------ Percent Yield ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Theoretical Yield}: calculated amount of product based on the stoichiometry of the reaction. \\
+    \textbf{Actual Yield}: amount of product collected during the experiment. \\
+    Usually, the theoretical yield $>$ actual yield. \\
+    \textbf{Percent Yield}: the percent ratio of the actual yield to the theoretical yield.
+    $$percent\,yield=\frac{actual\,yield}{theoretical\,yield}\times100\%$$
+    \textbf{Factors affecting percentage yield}:
+    \begin{itemize}
+        \item Reversible reactions.
+	\item Not enough time to complete the reaction.
+	\item Reactants contain impurities.
+    \end{itemize}
+    \textit{Too high of a temperature does not affect percent yield.}
+    \end{minipage}
+};
+%------------ Percent Yield Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Percent Yield};
+\end{tikzpicture}
+
+%------------ Percent Purity ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Percent Purity}: the percent ratio of the pure product to the impure product obtained by mass.
+    $$\%\,purity=\frac{mass\,of\,pure\,product}{mass\,of\,impure\,product\,obtained}\times100\%$$
+    \end{minipage}
+};
+%------------ Percent Purity Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Percent Purity};
+\end{tikzpicture}
+
+\end{multicols*}
+\end{document}

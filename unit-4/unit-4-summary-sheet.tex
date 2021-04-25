@@ -1,0 +1,326 @@
+\documentclass{article}
+\usepackage[landscape]{geometry}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{esint}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage[symbol]{footmisc}
+\makeatletter
+
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\renewcommand{\thempfootnote}{\fnsymbol{mpfootnote}}
+\makeatother
+
+\title{Unit 1 Summary Sheet}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\advance\topmargin-.8in
+\advance\textheight3in
+\advance\textwidth3in
+\advance\oddsidemargin-1.5in
+\advance\evensidemargin-1.5in
+\parindent0pt
+\parskip2pt
+\newcommand{\hr}{\centerline{\rule{3.5in}{1pt}}}
+%\colorbox[HTML]{e4e4e4}{\makebox[\textwidth-2\fboxsep][l]{texto}
+\begin{document}
+
+\begin{center}{\huge{\textbf{Unit 4 Summary Sheet}}}\\
+\end{center}
+\begin{multicols*}{3}
+
+\tikzstyle{mybox} = [draw=black, fill=white, very thick,
+    rectangle, rounded corners, inner sep=10pt, inner ysep=10pt]
+\tikzstyle{fancytitle} =[fill=black, text=white, font=\bfseries]
+
+%------------ Introduction to Solutions ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Terminology}
+    \begin{itemize}
+        \item Solution - homogeneous mixture of solvent and one or more solutes.
+	\item Solvent - substance that has other substances dissolved in it (in greater quantity).
+	\item Solute - substance that is dissolved in solution (in lesser quantity).
+	\item Aqueous Solution - water is the solvent.
+	\item Miscible - substances that are soluble in each other in any proportion.
+	\item Immiscible - substances that do not readily dissolve in each other.
+	\item Alloy - a solution of two or more metals.
+	\item Amalgam - an alloy (solution) of mercury with other metals.
+	\item Solubility - amount of solute that dissolves in a given quantity of solvent at a specific temperature.
+	\item Saturated Solution - a solution that contains the maximum quantity of solute at a given temperature and pressure.
+	\item Unsaturated Solution - a solution in which more solute can dissolve at a given temperature and pressure.
+	\item Soluble - solubility > 1g/100mL of solvent.
+	\item Insoluble - solubility < 0.1g/100mL of solvent.
+	\item Slightly Soluble - between 0.1g and 1g/100mL.
+	\item Rate of Dissolving - speed at which a solute dissolves in a solvent.
+	\item Electrolyte - solute that conducts current in aqueous solution.
+	\item Non-electrolyte - solute that does not conduct current in aqueous solution.
+    \end{itemize}
+    \end{minipage}
+};
+%------------ Introduction to Solutions Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Introduction to Solutions};
+\end{tikzpicture}
+
+%------------ Rate of Dissolving ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Factors Affecting Rate of Dissolving}:
+    \begin{enumerate}
+        \item Temperature: $\uparrow$ average kinetic energy = $\uparrow$ number of collisions
+        \item Agitation: $\uparrow$ contact between solute and solvent
+	\item Particle Size: $\downarrow$ particle size = $\uparrow$ surface area per unit volume (or mass)
+    \end{enumerate}
+    \end{minipage}
+};
+%------------ Rate of Dissolving Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Rate of Dissolving};
+\end{tikzpicture}
+
+%------------ Factors of Solubility ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Factors Affecting Solubility}:
+    \begin{enumerate}
+        \item Molecule Size: $\uparrow$ molecule size = $\downarrow$ solubility
+        \item Temperature:
+	\begin{itemize}
+	    \item Solid: $\uparrow$ absolute temperature causes bonds to become weaker = $\uparrow$ solubility
+	    \item Gas: $\uparrow$ absolute temperature causes intermolecular bonds to break = $\downarrow$ solubility
+	\end{itemize}
+	\item Pressure: $\uparrow$ pressure on gas = $\uparrow$ solubility
+    \end{enumerate}
+    \end{minipage}
+};
+%------------ Factors of Solubility Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Factors of Solubility};
+\end{tikzpicture}
+
+%------------ Dissolving Process ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \begin{enumerate}
+        \item Solute particles separate (heat is absorbed).
+        \item Solvent particles separate by breaking intermolecular forces (heat is absorbed).
+	\item Attraction between solute and solvent particles occur (heat is released).
+    \end{enumerate}
+    e.g. sodium chloride (salt) dissociating into sodium and chloride ions when it is mixed with water. \\ \\
+    \textbf{Hydrogen bonding} accounts for many of the unique physical properties of water.
+    \begin{itemize}
+        \item high melting and boiling points
+        \item high surface tension
+	\item ability to exchange thermal energy with little change in temperature
+        \item inability to mix with non-polar compounds
+    \end{itemize}
+    \end{minipage}
+};
+%------------ Dissolving Process Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Dissolving Process};
+\end{tikzpicture}
+
+%------------ Solutions and Their Characteristics ---------------
+\begin{tikzpicture}
+\node [mybox] (box){
+    \begin{minipage}{0.3\textwidth}
+    \small{
+    \hspace*{-0.5cm}
+    \begin{tikzpicture}[level distance=2cm,
+        level 1/.style={sibling distance=4.1cm},
+	level 2/.style={sibling distance=2.1cm}]
+	\centering
+	\node {Matter}
+	    child {node {Mixture}
+	    child {node {\begin{tabular}{c} Homogeneous \\ Mixture \\ (solution) \end{tabular}}}
+	    child {node {\begin{tabular}{c} Heterogeneous \\ Mixture \end{tabular}}
+	    child {node {Colloids}}
+	    child {node {Suspensions}}
+	        }
+	    }
+	    child {node {Pure Substance}
+	    child {node {Compound}}
+	    child {node {Element}}
+	    };
+    \end{tikzpicture}}
+    \textbf{Homogeneous Mixture}: a mixture in which the composition is uniform throughout the mixture. \\
+    e.g. wine, coffee, apple juice, salt water. \\
+    \textbf{Heterogeneous Mixture}: a mixture that contains two or more phases. \\
+    e.g. blood, paint, sand, oil and water.
+    \begin{itemize}
+        \item Colloid $\rightarrow$ has a homogeneous appearance but is not transparent (e.g. milk, butter, etc.)
+	\item Suspension $\rightarrow$ particles are visible to the naked eye; they can be separated by gravity (e.g. flour in water, muddy water, etc.)
+    \end{itemize}
+    \textbf{Variable Composition}: different ratios of solvent to solute are possible. \\
+    \textbf{Concentration}: the ratio of the quantity of solute to the quantity of solution or solvent. \\
+    \textbf{Concentrated Solution}: a solution with a relatively large quantity of solute dissolved per unit volume of solution. \\
+    \textbf{Dilute Solution}: a solution with a relatively small quantity of solute dissolved per unit volume of solution.
+    \end{minipage}
+};
+%------------ Solutions and Their Characteristics Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Solutions and Their Characteristics};
+\end{tikzpicture}
+
+%------------ Degrees of Saturation ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Supersaturated Solution}: a solution that contains more than the maximum quantity of solute that it should at a given temperature and pressure. \\
+    This can be attained by dissolving excess solute at a \textit{higher temperature}, and then \textit{cooling} the solution.
+    \end{minipage}
+};
+%------------ Degrees of Saturation Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Degrees of Saturation};
+\end{tikzpicture}
+
+%------------ Process of Dissolving ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Process of Dissolving}: the ability of a solute to be dissolved in a solvent depends on the forces of attraction that are present between the particles. \\
+    The \textbf{3 intermolecular forces} present:
+    \begin{itemize}
+        \item attraction between 2 solute particles
+        \item attraction between 2 solvent particles
+        \item attraction between a solute and a solvent particle
+    \end{itemize}
+    Process of Dissolving at the Molecular Level:
+    \begin{enumerate}
+        \item Forces between the particles in the solid (solute) must be broken.
+	\begin{itemize}
+	    \item For ionic solid, the ion-ion forces which are holding the ions together must be broken.
+	    \item For molecular solid, the London dispersion, dipole-dipole, or hydrogen bonds must be broken.
+	\end{itemize}
+	\item Some intermolecular forces between the liquid (solvent) particles must be broken.
+	\item Attractions form between solid (solute) particles and liquid (solvent) particles.
+    \end{enumerate}
+    \textit{The intermolecular forces between solute and solvent must be great enough to overcome the attractions of solute-solute and solvent-solvent, in order for a solute to dissolve in a solvent}. \\ \\
+    \textbf{Solubility Rule}: polar compounds dissolve in polar solvents, and non-polar compounds dissolve in non-polar solvents (like dissolves like). \\
+    \textbf{Ion-dipole Interactions}
+    \begin{itemize}
+        \item attractive force between an ion and a polar molecule
+	\item typically an ionic compound will dissolve in a polar solvent (exceptions occur with compounds that have very strong ionic bonds)
+    \end{itemize}
+    Dissociation of sodium chloride ($NaCl$) in water: \\
+    $NaCl(s)\rightarrow Na^{+}(aq)+Cl^{-}(aq)$ \\
+    \textit{Water does not undergo a chemical change, which is why it is not included}.
+    \end{minipage}
+};
+%------------ Process of Dissolving Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Process of Dissolving};
+\end{tikzpicture}
+
+%------------ Solubility of Ionic Compounds in Water ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Dissociation}: the separation of individual ions from an ionic compound as it dissolves in water. \\
+    \textbf{Hydrated Ions}: ions that are surrounded by water molecules in an aqueous solution.
+    \begin{itemize}
+        \item the ability of hydrated ions to move is what accounts for the electrical conductivity of a solution (electrolytes)
+	\item since water is polar, most non-polar covalent compounds are not soluble in water
+	\item molecules do not separate into individuals atoms, they are only surrounded by water
+	\item these molecules are neutral, so they do not conduct electricity (non-electrolytes)
+    \end{itemize}
+    \end{minipage}
+};
+%------------ Solubility of Ionic Compounds in Water Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Solubility of Ionic Compounds in Water};
+\end{tikzpicture}
+
+%------------ Surfactant ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Hydrophobic}: the end that is ``water-fearing'', which is not attracted to water. \\
+    e.g. non-polar substances such as oil, grease, etc. \\
+    \textbf{Hydrophilic}: the end that is ``water-loving'', which is attracted to water. \\
+    e.g. polar substances such as water, etc. \\
+    \textbf{Surfactant}: a substance that can reduce the surface tension of a solvent; it has a hydrophobic part and a hydrophilic part. \\
+    e.g. soaps, detergents, lubricants, fabric softeners, inks, adhesives, etc.
+    \end{minipage}
+};
+%------------ Surfactant Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Surfactant};
+\end{tikzpicture}
+
+%------------ Solubility Curves ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Solubility Curve}: a graph of the solubility of a substance over a range of temperatures. \\
+    220 g of sucrose dissolves in 100 g of water at $30^{\circ}C$.
+    \begin{itemize}
+	\item the curve represents the maximum amount of solute that will dissolve in 100 g of water at that temperature
+        \item ionic compounds - solubility of most ionic compounds increases with rising temperature
+        \item gases - solubility of gases decreases as the temperature rises
+    \end{itemize}
+    \textbf{Thermal Pollution}: is excess thermal energy released into water; can reduce oxygen concentrations.
+    \end{minipage}
+};
+%------------ Solubility Curves Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Solubility Curves};
+\end{tikzpicture}
+
+%------------ Concentration of Solutions ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Concentration}: the ratio of the amount of solute per quantity of solution.
+    $$concentration=\frac{quantity\,of\,solute}{quantity\,of\,solution}$$
+    \textbf{Percentage Volume/Volume (\% v/v)} \\
+    Generally used when mixing two liquids to form a solution.
+    $$\%v/v=\frac{v_{solute}}{v_{solution}}\times100\%$$
+    \textbf{Percentage Mass/Volume (\% m/v)} \\
+    Generally used when mixing a solid solute into a liquid to form a solution. \\
+    \textit{Units must be kg and L, or g and mL}.
+    $$\%m/v=\frac{m_{solute}}{v_{solution}}\times100\%$$
+    \textbf{Percentage Mass/Mass (\% m/m)} \\
+    The amount of grams of solute per 100 g of solution is numerically the same as the mass/mass percentage.
+    $$\%m/m=\frac{m_{solute}}{m_{solution}}\times100\%$$
+    \textbf{Parts Per Million (PPM)} \\
+    1 ppm = 1 mg/L, is used for dilute solutions. \\
+    Density of water = 1.0 g/mL.
+    $$ppm=\frac{m_{solute}}{m_{solution}}\times10^{6}$$
+    \textbf{Parts Per Billion (PPB)} \\
+    1000 ppb = 1 mg/L and 1 ppm = 1000 ppb.
+    $$ppb=\frac{m_{solute}}{m_{solution}}\times10^{9}$$
+    \end{minipage}
+};
+%------------ Concentration of Solutions Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Concentration of Solutions};
+\end{tikzpicture}
+
+%------------ Molar Concentration ---------------
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+    \textbf{Molar Concentration (Molarity)}: the number of moles of solute dissolved in 1 L of solution.
+    $$molar\,concentration=\frac{amount\,of\,solute\,(mol)}{amount\,of\,solution\,(L)}$$
+    Can also be written as $\displaystyle{c=\frac{n}{V}}$, units are mol/L or M. \\
+    In stoichiometry problems, use $n=cV$ to calculate the number of moles, and M as a conversion factor.
+    \end{minipage}
+};
+%------------ Molar Concentration Header ---------------------
+\node[fancytitle, right=10pt] at (box.north west) {Molar Concentration};
+\end{tikzpicture}
+
+\end{multicols*}
+\end{document}
